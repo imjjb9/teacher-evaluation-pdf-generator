@@ -72,15 +72,15 @@
     $pdf->cell(25, 25, '', 0, 1, 'C');
 
     $pdf->setFont('Arial', '', $medium);
-    $pdf->cell(10, 15, '', 0, 0, 'L');
+    $pdf->cell(10, 15, '', 0, 0, 'L'); #margin
     $pdf->cell(38, 15, 'Prepared by:', 0, 1, 'L');
     $pdf->setFont('Arial', 'B', $medium);
-    $pdf->cell(10, 15, '', 0, 0, 'L');
+    $pdf->cell(10, 15, '', 0, 0, 'L'); #margin
     $pdf->cell(100, 7, $preparedBy, 0, 1, 'L');
     $pdf->setFont('Arial', '', $medium);
-    $pdf->cell(10, 15, '', 0, 0, 'L');
+    $pdf->cell(10, 15, '', 0, 0, 'L'); #margin
     $pdf->cell(44, 7, 'Office in Charge', 0, 1, 'L');
-    $pdf->cell(10, 15, '', 0, 0, 'L');
+    $pdf->cell(10, 15, '', 0, 0, 'L'); #margin
     $pdf->cell(100, 7, 'Office of the Vice President of Academic Affair', 0, 1, 'L');
 
     #padding
@@ -89,10 +89,10 @@
     $pdf->cell(10, 15, '', 0, 0, 'L');
     $pdf->cell(32, 15, 'Noted by:', 0, 1, 'L');
     $pdf->setFont('Arial', 'B', $medium);
-    $pdf->cell(10, 15, '', 0, 0, 'L');
+    $pdf->cell(10, 15, '', 0, 0, 'L'); #margin
     $pdf->cell(69, 7, $notedBy, 0, 1, 'L');
     $pdf->setFont('Arial', '', $medium);
-    $pdf->cell(10, 15, '', 0, 0, 'L');
+    $pdf->cell(10, 15, '', 0, 0, 'L'); #margin
     $pdf->cell(74, 7, 'Colegio de Montalban President', 0, 1, 'L');
 
     #padding
