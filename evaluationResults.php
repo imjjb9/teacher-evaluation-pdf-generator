@@ -34,7 +34,6 @@
     #first page
 
     $pdf->SetFont('Arial', 'B', '11');
-    $pdf->Ln(15);
     $pdf->Cell(14, 10, "Name: ", 0, 0, '');
     $pdf->SetFont('Arial', 'U', '11');
     $pdf->Cell(0, 10, $name, 0, 0, '');
@@ -104,9 +103,6 @@
     }
 
     #second page
-    #padding
-    $pdf->cell(15, 15, '', 0, 1, 'C');
-
     $pdf->setFont('Arial', 'B', $medium);
     $pdf->cell(14, 7, 'Name:', 0, 0, 'L');
     $pdf->setFont('Arial', 'U', $medium);

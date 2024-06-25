@@ -28,7 +28,7 @@ class PDF extends FPDF {
       $this->Ln(6);
       $this->Cell(80);
       $this->Cell(30, 10, "First Semester, Academic Year 2023-2024", 0, 0, 'C');
-      $this->ln(10);
+      $this->ln(20);
   }
 
 //Set the array of column widths
