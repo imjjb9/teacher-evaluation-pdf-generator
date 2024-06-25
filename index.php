@@ -1,9 +1,5 @@
 <?php
   require('./evaluationResults.php');
-
-  $semester = 'First Semester';
-  $year = '2023-2024';
-
   $name = 'Brao, Rizza Mae C.';
 
   $instructionGrade = (String) 4.62;
@@ -17,23 +13,208 @@
   $preparedBy = 'Rheza Maureen Joy Y. Gabinete, MBA, LPT';
   $notedBy = 'Joy U Mercado, Ph. D., LPT';
 
-  $strengthAndWeakness = [
-    ['Brao, Rizza Mae C.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    ['Brao, Rizza Mae C.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    ['Brao, Rizza Mae C.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    ['Brao, Rizza Mae C.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    ['Brao, Rizza Mae C.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.']
-  ];
+  $strengthAndWeakness = Array(
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioggggjfgggggggegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdssssssssfggggggggggggggggggsssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioggfgggggggggggggggeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssgfgggggggggggssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeiggfggggggggggoegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeegjfgggggggeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+    array(
+        "strength"=>"isaehgoieeeeeeeeeioegioeiigoeddddddddddddddfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhd",
+        "weakness"=>"kjdsssssssssssssssssssssssssssssssssssssssssssssssssssssfdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsb"
+    ),
+);
 
   $position = "Full-Time Faculty";
   $comments = "Ok namn siya magturo, magaling magturo c maam";

@@ -1,27 +1,5 @@
 <?php
-  require('fpdf.php');
-  require('pdf-templates.php');
-
-  class PDF extends FPDF {
-    function Header() {
-      $this->setFont('Arial', '', 8);
-      $this->SetMargins(15, 15);
-      
-      $this->Image('assets/images/montalban-logo.png', 10, 10, -400);
-  
-      $this->Cell(0, 5, 'Republic of the Philippines', 0, 1, 'C');
-      $this->Cell(0, 5, 'Province of Rizal', 0, 1, 'C');
-      $this->Cell(0, 5, 'Municipality of Rodriguez', 0, 1, 'C');
-  
-      $this->setFont('Arial', 'B', 14);
-      $this->Cell(0, 5, 'Colegio de Montalban', 0, 1, 'C');
-  
-      $this->setFont('Arial', '', 10);
-      $this->Cell(0, 5, 'Kasiglahan Village, San Jose Rodriguez, Rizal', 0, 1, 'C');
-      $this->Image('assets/images/cdm-logo.png', 167, 10, -350);
-      $this->Cell(0, 10, '___________________________________________________________________________________________', 0, 1, 'C');
-  }
-}
+  require('pdf.php');
 
   function generateOverallEvaluationResult(
     $name,
@@ -34,7 +12,7 @@
     $adjectiveRating,
     $preparedBy,
     $notedBy,
-    $strengthAndWeakness,
+    $strengthsAndWeaknesses,
     $strengths,
     $toImproves,
     $comments
@@ -54,13 +32,7 @@
     $pdf->addPage();
 
     #first page
-    $pdf->SetFont('Arial', 'B', '14');
-    $pdf->Ln(6);
-    $pdf->Cell(80);
-    $pdf->Cell(30, 10, "Results of the Students Evaluation of Teacher's Performance", 0, 0, 'C');
-    $pdf->Ln(6);
-    $pdf->Cell(80);
-    $pdf->Cell(30, 10, "First Semester, Academic Year 2023-2024", 0, 0, 'C');
+
     $pdf->SetFont('Arial', 'B', '11');
     $pdf->Ln(15);
     $pdf->Cell(14, 10, "Name: ", 0, 0, '');
@@ -121,17 +93,19 @@
     $pdf->SetFont('Arial', 'B', '11');
     $pdf->Cell(15, 6, "Legend: ", 0, 0, '');
     $pdf->SetFont('Arial', '', '11');
-    for($x=0; $x < sizeof($legends); $x++){
-        if($x == 0){
-            $pdf->Cell(1);
-        }else{
-            $pdf->Cell(109); 
-        }
-        $pdf->MultiCell(0, 6, $legends[$x], 0, 'L');
+
+    for ($x=0; $x < sizeof($legends); $x++) {
+      if ($x == 0) {
+        $pdf->Cell(1);
+      } else {
+        $pdf->Cell(109); 
+      }
+      $pdf->MultiCell(0, 6, $legends[$x], 0, 'L');
     }
 
+    #second page
     #padding
-    $pdf->cell(20, 20, '', 0, 1, 'C');
+    $pdf->cell(15, 15, '', 0, 1, 'C');
 
     $pdf->setFont('Arial', 'B', $medium);
     $pdf->cell(14, 7, 'Name:', 0, 0, 'L');
@@ -161,7 +135,7 @@
     $pdf->cell(80, 7, $adultLearningPracticesGrade, 0, 1, 'C');
 
     #padding
-    $pdf->cell(25, 25, '', 0, 1, 'C');
+    $pdf->cell(10, 10, '', 0, 1, 'C');
 
     $pdf->setFont('Arial', '', $medium);
     $pdf->cell(10, 15, '', 0, 0, 'L'); #margin
@@ -191,33 +165,35 @@
     $pdf->cell(10, 10, '', 0, 1, 'C');
 
     $pdf->setFont('Arial', 'B', $medium);
-    $pdf->cell(95, 7, 'Legend:', 0, 0, 'R');
-    $pdf->setFont('Arial', '', $medium);
-    for($x=0; $x < sizeof($legends); $x++){
-      if($x == 0){
-          $pdf->Cell(1);
-      }else{
-          $pdf->Cell(109); 
+    $pdf->Cell(93);
+    $pdf->Cell(15, 6, "Legend: ", 0, 0, '');
+    $pdf->SetFont('Arial', '', $medium);
+
+    for ($x=0; $x < sizeof($legends); $x++) {
+      if ($x == 0) {
+        $pdf->Cell(1);
+      } else {
+        $pdf->Cell(109);
       }
       $pdf->MultiCell(0, 6, $legends[$x], 0, 'L');
-  }
-  
-    #padding
-    $pdf->cell(10, 10, '', 0, 1, 'C');
-
-    $pdf->SetFont('Arial', '', $medium);
-    
-    $cellWidth = 60;
-    $cellHeight = 7;
-    
-    foreach ($strengthAndWeakness as $commentSet) {
-        for ($i = 0; $i < count($commentSet); $i++) {
-            $pdf->MultiCell($cellWidth, $cellHeight, $commentSet[$i], 1); // Adjust width and height as needed
-            $pdf->SetX($pdf->GetX() + $cellWidth);
-        }
-        $pdf->Ln();
-        $pdf->SetX(10);
     }
+  
+    #third page
+    $pdf->AddPage();
+    // $pdf->ln(10);
+    $pdf->SetWidths(array(90, 90));
+    $pdf->SetLineHeight(5);
+    
+
+    $pdf->setFont('Arial', 'B', $medium);
+    $pdf->Row(Array('Strength', 'Weakness'));
+    $pdf->setFont('Arial', '', $medium);
+    foreach($strengthsAndWeaknesses as $item){
+      $pdf->Row(Array(
+          $item['strength'],
+          $item['weakness']
+      ));
+  }
 
     $pdf->Output('F', 'evaluationResults/' . $name . ' - Overall Evaluation Result.pdf');
   }
